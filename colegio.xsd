@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="instituto">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="alumnos">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="alumno" minOccurs="0" maxOccurs="unbounded">
+<xs:complexType mixed="true">
+<xs:sequence>
+
+ 
+
+
+<xs:element name="Datospersonales">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Cod-curso">
+<xs:simpleType>
+
+<xs:restriction base="xs:string">
+<xs:enumeration value="TDN-0809-M"/>
+<xs:enumeration value="PFF-0708-M"/>
+<xs:enumeration value="TC-0607-D"/>
+<xs:enumeration value="OFW-0708-M"/>
+<xs:enumeration value="TC-0607-T"/>
+<xs:enumeration value="0FW0607T"/>
+</xs:restriction>
+</xs:simpleType>
+</xs:element>
+<xs:element name="nombre">
+
+<xs:complexType mixed="true"> 
+<xs:attribute name="nombre" use="required">
+<xs:simpleType>
+<xs:restriction base="xs:string">
+<xs:maxLength value="30"/>
+</xs:restriction>
+</xs:simpleType>
+</xs:attribute>
+</xs:complexType>
+</xs:element>
+
+<xs:element name="apellidos">
+
+<xs:complexType mixed="true"> 
+<xs:attribute name="apellidos" use="required">
+<xs:simpleType>
+<xs:restriction base="xs:string">
+<xs:maxLength value="50"/>
+</xs:restriction>
+</xs:simpleType>
+</xs:attribute>
+</xs:complexType>
+</xs:element>
+
+
+<xs:element name="direccion" type="xs:string" />
+
+<xs:element name="Localidad" type="xs:string" /> 
+
+<xs:element name="CP" >
+<xs:simpleType>
+<xs:restriction base="xs:integer">
+<xs:pattern value="[0-9]{5}"/>
+</xs:restriction>
+</xs:simpleType>
+</xs:element>
+
+<xs:element name="Provincia" type="xs:string" /> 
+
+<xs:element name="fechadenacimiento" type="xs:date"/>
+
+
+<xs:element name="email">
+<xs:complexType mixed="true"> 
+<xs:attribute name="correo"  use="required" >
+<xs:simpleType>
+<xs:restriction base="xs:string">
+        <xs:pattern value="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"/>
+</xs:restriction>
+</xs:simpleType>
+</xs:attribute>
+</xs:complexType>
+</xs:element>
+
+<xs:element name="imagen">
+<xs:complexType>
+    <xs:attribute name="src" type="xs:anyURI"/>
+</xs:complexType>
+</xs:element> 
+
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+<xs:element name="Datosacademicos">
+<xs:complexType>
+<xs:sequence>
+
+
+<xs:element name="curso">
+<xs:simpleType>
+<xs:restriction base="xs:string">
+<xs:enumeration value="Primer curso"/>
+<xs:enumeration value="Segundo curso"/>
+</xs:restriction>
+</xs:simpleType>
+</xs:element>
+
+<xs:element name="idiomas">
+<xs:complexType>
+<xs:all>
+<xs:element name="castellano" type="xs:string"/>
+<xs:element name="catalan" type="xs:string"/>
+<xs:element name="ingles" type="xs:string"/>
+</xs:all>
+</xs:complexType>
+</xs:element>
+
+
+<xs:element name="Asignaturas" >
+<xs:simpleType>
+<xs:restriction base="xs:integer">
+<xs:pattern value="[1-6]{1}"/>
+</xs:restriction>
+</xs:simpleType>
+</xs:element>
+
+
+
+
+
+<xs:element name="observaciones" type="xs:string" />
+
+
+
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+
+</xs:sequence>
+<xs:attribute name="id" use="required">
+<xs:simpleType>
+<xs:restriction base="xs:integer">
+</xs:restriction>
+</xs:simpleType>
+
+</xs:attribute>
+</xs:complexType>
+</xs:element>
+
+</xs:sequence>
+
+</xs:complexType>
+</xs:element>
+
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:schema>

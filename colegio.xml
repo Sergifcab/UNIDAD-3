@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<instituto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="colegio.xsd">
+
+<alumnos>
+	
+<alumno id="1" >
+<Datospersonales>
+<Cod-curso>TDN-0809-M</Cod-curso>
+<nombre nombre="Pedro Luis"/>
+<apellidos apellidos="Churruca Ramírez" />
+	
+<direccion>C/ Miramar, 55 1º A</direccion>
+        <Localidad>Mojacar</Localidad>
+<CP>04639</CP>
+  <Provincia>Almería</Provincia>
+  <fechadenacimiento>1987-08-15</fechadenacimiento>
+<email correo="Pedro@hotmail.com"/>
+	 <imagen src="fotoDam001/foto.jpg"/>
+
+</Datospersonales>
+<Datosacademicos>
+<curso>Primer curso</curso>
+<idiomas>
+<castellano/>
+<catalan/>
+<ingles/>
+</idiomas>
+
+<Asignaturas>5</Asignaturas>
+
+<observaciones/>
+</Datosacademicos>
+
+</alumno>
+<alumno id="2" >
+<Datospersonales>
+<Cod-curso>PFF-0708-M</Cod-curso>
+<nombre nombre="Joaquin"/>
+<apellidos apellidos="Azcona Valverde"/>
+	
+<direccion>C/ Tutor,13</direccion>
+        <Localidad>Albacete</Localidad>
+<CP>02040</CP>
+  <Provincia>Albacete</Provincia>
+  <fechadenacimiento>1988-08-21</fechadenacimiento>
+<email correo="Joaquin@hotmail.com" />
+	 <imagen src="fotoASIX001/foto.jpg"/>
+
+</Datospersonales>
+<Datosacademicos>
+<curso>Primer curso</curso>
+<idiomas>
+<castellano/>
+<catalan/>
+<ingles/>
+</idiomas>
+
+<Asignaturas>5</Asignaturas>
+
+<observaciones/>
+</Datosacademicos>
+</alumno>
+<alumno id="3" >
+<Datospersonales>
+<Cod-curso>TC-0607-D</Cod-curso>
+<nombre nombre="Laura"/>
+<apellidos apellidos="Gómez Holgado"/>
+	
+<direccion>Pje.Del Mirador,23 </direccion>
+        <Localidad>Sevilla</Localidad>
+<CP>41020</CP>
+  <Provincia>Sevilla</Provincia>
+  <fechadenacimiento>1985-10-15</fechadenacimiento>
+<email correo="Laura@hotmail.com" />
+	 <imagen src="fotoDaw002/foto.jpg" />
+
+</Datospersonales>
+
+<Datosacademicos>
+
+<curso>Segundo curso</curso>
+
+<idiomas>
+<castellano/>
+<catalan/>
+<ingles/>
+</idiomas>
+
+<Asignaturas>3</Asignaturas>
+
+
+<observaciones/>
+</Datosacademicos>
+
+</alumno>
+<alumno id="4" >
+<Datospersonales>
+<Cod-curso>OFW-0708-M</Cod-curso>
+<nombre nombre="Alberto" />
+<apellidos apellidos="Serrano Rodríguez"/>
+	
+<direccion>C/ Vitoria,15 2ºD</direccion>
+        <Localidad>Burgos</Localidad>
+<CP>07010</CP>
+  <Provincia>Burgos</Provincia>
+  <fechadenacimiento>1983-02-15</fechadenacimiento>
+<email correo="Alberto@hotmail.com" />
+	 <imagen src="fotoASIX010/foto.jpg" />
+
+</Datospersonales>
+
+<Datosacademicos>
+
+
+<curso>Primer curso</curso>
+
+<idiomas>
+<castellano/>
+<catalan/>
+<ingles/>
+</idiomas>
+
+<Asignaturas>2</Asignaturas>
+
+
+<observaciones/>
+</Datosacademicos>
+
+</alumno>
+
+</alumnos>
+</instituto>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instituto[
+<!ELEMENT instituto (alumnos)>
+<!ELEMENT alumnos (alumno*)>
+<!ELEMENT alumno (Datospersonales,Datosacademicos)>
+<!ATTLIST alumno id CDATA #REQUIRED>
+<!ELEMENT Datospersonales (Cod-curso,nombre,apellidos,direccion,Localidad,CP,Provincia,fechadenacimiento,email,imagen)>
+<!ELEMENT Cod-curso (#PCDATA)>
+<!ATTLIST Cod-curso ID CDATA #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT direccion (#PCDATA) >
+<!ELEMENT Localidad (#PCDATA) >
+<!ELEMENT CP (#PCDATA)>
+<!ELEMENT Provincia (#PCDATA) >
+<!ELEMENT fechadenacimiento  (#PCDATA) >
+<!ELEMENT email (#PCDATA) >
+<!ELEMENT imagen ANY>
+<!ENTITY imagen SYSTEM "foto.jpg" >
+<!ELEMENT Datosacademicos (curso,idiomas,Asignaturas,observaciones?)>
+<!ELEMENT curso (#PCDATA) >
+<!ELEMENT idiomas (castellano?,catalan?,ingles?)>
+<!ELEMENT castellano EMPTY>
+<!ELEMENT catalan EMPTY>
+<!ELEMENT ingles EMPTY>
+<!ELEMENT Asignaturas (#PCDATA) >
+<!ELEMENT observaciones EMPTY>
+]>
+<instituto>
+
+
+<alumnos>
+	
+<alumno id="1" >
+<Datospersonales>
+<Cod-curso ID="TDN-0809-M"/>
+<nombre>Pedro Luis</nombre>
+<apellidos>Churruca Ramírez</apellidos>
+	
+<direccion>C/ Miramar, 55 1º A</direccion>
+        <Localidad>Mojacar</Localidad>
+<CP>04639</CP>
+  <Provincia>Almería</Provincia>
+  <fechadenacimiento>1987-08-15</fechadenacimiento>
+<email>Pedro@hotmail.com</email>
+	 <imagen>"fotoDam001/foto.jpg"</imagen>
+
+</Datospersonales>
+<Datosacademicos>
+<curso>Primer curso</curso>
+<idiomas>
+<castellano/>
+<catalan/>
+<ingles/>
+</idiomas>
+
+<Asignaturas>5</Asignaturas>
+
+<observaciones/>
+</Datosacademicos>
+
+</alumno>
+<alumno id="2" >
+<Datospersonales>
+<Cod-curso ID="PFF-0708-M"/>
+<nombre>Joaquin</nombre>
+<apellidos>Azcona Valverde</apellidos>
+	
+<direccion>C/ Tutor,13</direccion>
+        <Localidad>Albacete</Localidad>
+<CP>02040</CP>
+  <Provincia>Albacete</Provincia>
+  <fechadenacimiento>1988-08-21</fechadenacimiento>
+<email>Joaquin@hotmail.com</email>
+	 <imagen>"fotoASIX001/foto.jpg"</imagen>
+
+</Datospersonales>
+<Datosacademicos>
+<curso>Primer curso</curso>
+<idiomas>
+<castellano/>
+<catalan/>
+<ingles/>
+</idiomas>
+
+<Asignaturas>5</Asignaturas>
+
+<observaciones/>
+</Datosacademicos>
+</alumno>
+<alumno id="3" >
+<Datospersonales>
+<Cod-curso ID="TC-0607-D"/>
+<nombre>Laura </nombre>
+<apellidos>Gómez Holgado</apellidos>
+	
+<direccion>Pje.Del Mirador,23 </direccion>
+        <Localidad>Sevilla</Localidad>
+<CP>41020</CP>
+  <Provincia>Sevilla</Provincia>
+  <fechadenacimiento>1985-10-15</fechadenacimiento>
+<email>Laura@hotmail.com</email>
+	 <imagen>"fotoDaw002/foto.jpg" </imagen>
+
+</Datospersonales>
+
+<Datosacademicos>
+
+<curso>Segundo curso</curso>
+
+<idiomas>
+<castellano/>
+<catalan/>
+<ingles/>
+</idiomas>
+
+<Asignaturas>3</Asignaturas>
+
+
+<observaciones/>
+</Datosacademicos>
+
+</alumno>
+<alumno id="4" >
+<Datospersonales>
+<Cod-curso ID="OFW-0708-M"/>
+<nombre>Alberto </nombre>
+<apellidos>Serrano Rodríguez</apellidos>
+	
+<direccion>C/ Vitoria,15 2ºD</direccion>
+        <Localidad>Burgos</Localidad>
+<CP>07010</CP>
+  <Provincia>Burgos</Provincia>
+  <fechadenacimiento>1983-02-15</fechadenacimiento>
+<email>Alberto@hotmail.com</email>
+	 <imagen>"fotoASIX010/foto.jpg"</imagen>
+
+</Datospersonales>
+
+<Datosacademicos>
+
+
+<curso>Primer curso</curso>
+
+<idiomas>
+<castellano/>
+<catalan/>
+<ingles/>
+</idiomas>
+
+<Asignaturas>2</Asignaturas>
+
+
+<observaciones/>
+</Datosacademicos>
+
+</alumno>
+
+</alumnos>
+</instituto>
